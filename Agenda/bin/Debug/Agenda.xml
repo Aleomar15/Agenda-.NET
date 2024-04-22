@@ -1,0 +1,87 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Agenda
+</name>
+</assembly>
+<members>
+<member name="T:Agenda.My.Resources.Resources">
+<summary>
+  Uma classe de recurso de tipo de alta segurança, para pesquisar cadeias de caracteres localizadas etc.
+</summary>
+</member>
+<member name="P:Agenda.My.Resources.Resources.ResourceManager">
+<summary>
+  Retorna a instância de ResourceManager armazenada em cache usada por essa classe.
+</summary>
+</member>
+<member name="P:Agenda.My.Resources.Resources.Culture">
+<summary>
+  Substitui a propriedade CurrentUICulture do thread atual para todas as
+  pesquisas de recursos que usam essa classe de recurso de tipo de alta segurança.
+</summary>
+</member>
+<member name="P:Agenda.My.Resources.Resources._2931147_user_face_avatar_account_head_icon">
+<summary>
+  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Agenda.My.Resources.Resources._2931151_close_delete_exit_remove_x_icon">
+<summary>
+  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Agenda.My.Resources.Resources._2931155_add_attach_create_maximize_new_icon">
+<summary>
+  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Agenda.My.Resources.Resources._2931178_change_edit_pencil_creative_design_icon">
+<summary>
+  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Agenda.My.Resources.Resources._2931184_normal_regular_zoom_glass_magnifier_icon">
+<summary>
+  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Agenda.My.Resources.Resources._2931184_normal_regular_zoom_glass_magnifier_icon1">
+<summary>
+  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Agenda.My.Resources.Resources._2931187_door_enter_exit_in_leave_icon">
+<summary>
+  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Agenda.My.Resources.Resources.SaveIcon">
+<summary>
+  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="M:Agenda.CAD_CLIENTE.ExecutaQueryReader(System.String)">
+ <summary>
+ Função para consulta e retorno dos dados nas propiedades
+ </summary>
+ <param name="Query">passa o comando SQL</param>
+ <returns></returns>
+</member>
+<member name="M:Agenda.CAD_CLIENTE.ExecutaQuery(System.String)">
+ <summary>
+ Função para executar Insert, Update e Delete
+ </summary>
+ <param name="sql">passa o camendo SQL</param>
+ <returns></returns>
+</member>
+<member name="M:Agenda.CAD_CLIENTE.ExecutaQueryDataTable(System.String)">
+ <summary>
+ Função para execuatar Select com retorno de mais um Resultado
+ </summary>
+ <param name="sql">Passa o comando SQL</param>
+ <returns></returns>
+</member>
+</members>
+</doc>

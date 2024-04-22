@@ -24,11 +24,21 @@ Partial Class frmCadCliente
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmCadCliente))
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
+        Me.tsbIncluir = New System.Windows.Forms.ToolStripButton()
+        Me.tsbPesquisar = New System.Windows.Forms.ToolStripButton()
+        Me.tsbEditar = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
+        Me.tsbSave = New System.Windows.Forms.ToolStripButton()
+        Me.tsbCancelar = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
+        Me.tsbExit = New System.Windows.Forms.ToolStripButton()
         Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
         Me.ToolStripStatusLabel1 = New System.Windows.Forms.ToolStripStatusLabel()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.btnCorreio = New System.Windows.Forms.Button()
+        Me.txtUF = New System.Windows.Forms.TextBox()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.btnPesquisar = New System.Windows.Forms.Button()
         Me.txtTel2 = New System.Windows.Forms.TextBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.txtNumero = New System.Windows.Forms.TextBox()
@@ -47,15 +57,6 @@ Partial Class frmCadCliente
         Me.Label2 = New System.Windows.Forms.Label()
         Me.txtId = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.btnPesquisar = New System.Windows.Forms.Button()
-        Me.tsbIncluir = New System.Windows.Forms.ToolStripButton()
-        Me.tsbPesquisar = New System.Windows.Forms.ToolStripButton()
-        Me.tsbEditar = New System.Windows.Forms.ToolStripButton()
-        Me.tsbSave = New System.Windows.Forms.ToolStripButton()
-        Me.tsbCancelar = New System.Windows.Forms.ToolStripButton()
-        Me.tsbExit = New System.Windows.Forms.ToolStripButton()
-        Me.txtUF = New System.Windows.Forms.TextBox()
-        Me.Label10 = New System.Windows.Forms.Label()
         Me.ToolStrip1.SuspendLayout()
         Me.StatusStrip1.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
@@ -71,15 +72,71 @@ Partial Class frmCadCliente
         Me.ToolStrip1.TabIndex = 0
         Me.ToolStrip1.Text = "ToolStrip1"
         '
+        'tsbIncluir
+        '
+        Me.tsbIncluir.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.tsbIncluir.Image = Global.Agenda.My.Resources.Resources._2931155_add_attach_create_maximize_new_icon
+        Me.tsbIncluir.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.tsbIncluir.Name = "tsbIncluir"
+        Me.tsbIncluir.Size = New System.Drawing.Size(29, 24)
+        Me.tsbIncluir.Text = "Incluir"
+        '
+        'tsbPesquisar
+        '
+        Me.tsbPesquisar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.tsbPesquisar.Image = Global.Agenda.My.Resources.Resources._2931184_normal_regular_zoom_glass_magnifier_icon
+        Me.tsbPesquisar.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.tsbPesquisar.Name = "tsbPesquisar"
+        Me.tsbPesquisar.Size = New System.Drawing.Size(29, 24)
+        Me.tsbPesquisar.Text = "Pesquisar"
+        '
+        'tsbEditar
+        '
+        Me.tsbEditar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.tsbEditar.Image = Global.Agenda.My.Resources.Resources._2931178_change_edit_pencil_creative_design_icon
+        Me.tsbEditar.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.tsbEditar.Name = "tsbEditar"
+        Me.tsbEditar.Size = New System.Drawing.Size(29, 24)
+        Me.tsbEditar.Text = "Editar"
+        '
         'ToolStripSeparator1
         '
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
         Me.ToolStripSeparator1.Size = New System.Drawing.Size(6, 27)
         '
+        'tsbSave
+        '
+        Me.tsbSave.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.tsbSave.Enabled = False
+        Me.tsbSave.Image = Global.Agenda.My.Resources.Resources.SaveIcon
+        Me.tsbSave.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.tsbSave.Name = "tsbSave"
+        Me.tsbSave.Size = New System.Drawing.Size(29, 24)
+        Me.tsbSave.Text = "Salvar"
+        '
+        'tsbCancelar
+        '
+        Me.tsbCancelar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.tsbCancelar.Enabled = False
+        Me.tsbCancelar.Image = Global.Agenda.My.Resources.Resources._2931151_close_delete_exit_remove_x_icon
+        Me.tsbCancelar.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.tsbCancelar.Name = "tsbCancelar"
+        Me.tsbCancelar.Size = New System.Drawing.Size(29, 24)
+        Me.tsbCancelar.Text = "Cancelar"
+        '
         'ToolStripSeparator2
         '
         Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
         Me.ToolStripSeparator2.Size = New System.Drawing.Size(6, 27)
+        '
+        'tsbExit
+        '
+        Me.tsbExit.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.tsbExit.Image = Global.Agenda.My.Resources.Resources._2931187_door_enter_exit_in_leave_icon
+        Me.tsbExit.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.tsbExit.Name = "tsbExit"
+        Me.tsbExit.Size = New System.Drawing.Size(29, 24)
+        Me.tsbExit.Text = "Sair"
         '
         'StatusStrip1
         '
@@ -100,6 +157,7 @@ Partial Class frmCadCliente
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.btnCorreio)
         Me.GroupBox1.Controls.Add(Me.txtUF)
         Me.GroupBox1.Controls.Add(Me.Label10)
         Me.GroupBox1.Controls.Add(Me.btnPesquisar)
@@ -127,6 +185,43 @@ Partial Class frmCadCliente
         Me.GroupBox1.TabIndex = 2
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "GroupBox1"
+        '
+        'btnCorreio
+        '
+        Me.btnCorreio.Enabled = False
+        Me.btnCorreio.Image = Global.Agenda.My.Resources.Resources._2931184_normal_regular_zoom_glass_magnifier_icon1
+        Me.btnCorreio.Location = New System.Drawing.Point(198, 98)
+        Me.btnCorreio.Name = "btnCorreio"
+        Me.btnCorreio.Size = New System.Drawing.Size(23, 24)
+        Me.btnCorreio.TabIndex = 21
+        Me.btnCorreio.UseVisualStyleBackColor = True
+        '
+        'txtUF
+        '
+        Me.txtUF.Enabled = False
+        Me.txtUF.Location = New System.Drawing.Point(92, 192)
+        Me.txtUF.Name = "txtUF"
+        Me.txtUF.Size = New System.Drawing.Size(100, 22)
+        Me.txtUF.TabIndex = 20
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Location = New System.Drawing.Point(51, 198)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(25, 16)
+        Me.Label10.TabIndex = 19
+        Me.Label10.Text = "UF"
+        '
+        'btnPesquisar
+        '
+        Me.btnPesquisar.Enabled = False
+        Me.btnPesquisar.Image = Global.Agenda.My.Resources.Resources._2931184_normal_regular_zoom_glass_magnifier_icon1
+        Me.btnPesquisar.Location = New System.Drawing.Point(198, 42)
+        Me.btnPesquisar.Name = "btnPesquisar"
+        Me.btnPesquisar.Size = New System.Drawing.Size(23, 24)
+        Me.btnPesquisar.TabIndex = 18
+        Me.btnPesquisar.UseVisualStyleBackColor = True
         '
         'txtTel2
         '
@@ -281,89 +376,6 @@ Partial Class frmCadCliente
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Id"
         '
-        'btnPesquisar
-        '
-        Me.btnPesquisar.Enabled = False
-        Me.btnPesquisar.Image = Global.Agenda.My.Resources.Resources._2931184_normal_regular_zoom_glass_magnifier_icon1
-        Me.btnPesquisar.Location = New System.Drawing.Point(198, 42)
-        Me.btnPesquisar.Name = "btnPesquisar"
-        Me.btnPesquisar.Size = New System.Drawing.Size(23, 24)
-        Me.btnPesquisar.TabIndex = 18
-        Me.btnPesquisar.UseVisualStyleBackColor = True
-        '
-        'tsbIncluir
-        '
-        Me.tsbIncluir.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.tsbIncluir.Image = Global.Agenda.My.Resources.Resources._2931155_add_attach_create_maximize_new_icon
-        Me.tsbIncluir.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.tsbIncluir.Name = "tsbIncluir"
-        Me.tsbIncluir.Size = New System.Drawing.Size(29, 24)
-        Me.tsbIncluir.Text = "Incluir"
-        '
-        'tsbPesquisar
-        '
-        Me.tsbPesquisar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.tsbPesquisar.Image = Global.Agenda.My.Resources.Resources._2931184_normal_regular_zoom_glass_magnifier_icon
-        Me.tsbPesquisar.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.tsbPesquisar.Name = "tsbPesquisar"
-        Me.tsbPesquisar.Size = New System.Drawing.Size(29, 24)
-        Me.tsbPesquisar.Text = "Pesquisar"
-        '
-        'tsbEditar
-        '
-        Me.tsbEditar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.tsbEditar.Image = Global.Agenda.My.Resources.Resources._2931178_change_edit_pencil_creative_design_icon
-        Me.tsbEditar.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.tsbEditar.Name = "tsbEditar"
-        Me.tsbEditar.Size = New System.Drawing.Size(29, 24)
-        Me.tsbEditar.Text = "Editar"
-        '
-        'tsbSave
-        '
-        Me.tsbSave.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.tsbSave.Enabled = False
-        Me.tsbSave.Image = Global.Agenda.My.Resources.Resources.SaveIcon
-        Me.tsbSave.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.tsbSave.Name = "tsbSave"
-        Me.tsbSave.Size = New System.Drawing.Size(29, 24)
-        Me.tsbSave.Text = "Salvar"
-        '
-        'tsbCancelar
-        '
-        Me.tsbCancelar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.tsbCancelar.Enabled = False
-        Me.tsbCancelar.Image = Global.Agenda.My.Resources.Resources._2931151_close_delete_exit_remove_x_icon
-        Me.tsbCancelar.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.tsbCancelar.Name = "tsbCancelar"
-        Me.tsbCancelar.Size = New System.Drawing.Size(29, 24)
-        Me.tsbCancelar.Text = "Cancelar"
-        '
-        'tsbExit
-        '
-        Me.tsbExit.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.tsbExit.Image = Global.Agenda.My.Resources.Resources._2931187_door_enter_exit_in_leave_icon
-        Me.tsbExit.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.tsbExit.Name = "tsbExit"
-        Me.tsbExit.Size = New System.Drawing.Size(29, 24)
-        Me.tsbExit.Text = "Sair"
-        '
-        'txtUF
-        '
-        Me.txtUF.Enabled = False
-        Me.txtUF.Location = New System.Drawing.Point(92, 192)
-        Me.txtUF.Name = "txtUF"
-        Me.txtUF.Size = New System.Drawing.Size(100, 22)
-        Me.txtUF.TabIndex = 20
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(51, 198)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(25, 16)
-        Me.Label10.TabIndex = 19
-        Me.Label10.Text = "UF"
-        '
         'frmCadCliente
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -421,4 +433,5 @@ Partial Class frmCadCliente
     Friend WithEvents btnPesquisar As Button
     Friend WithEvents txtUF As TextBox
     Friend WithEvents Label10 As Label
+    Friend WithEvents btnCorreio As Button
 End Class
