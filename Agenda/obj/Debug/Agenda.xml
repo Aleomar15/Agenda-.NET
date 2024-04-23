@@ -83,5 +83,16 @@ Agenda
  <param name="sql">Passa o comando SQL</param>
  <returns></returns>
 </member>
+<member name="M:Agenda.frmCadCliente.AtivaDesativa(System.Boolean)">
+ <summary>
+ Subtina para ativar e desativar os componentes do formulário
+ </summary>
+ <param name="Status">True: Ativa componentes. False: Desativa componentes</param>
+</member>
+<member name="M:Agenda.frmCadCliente.CancelaOperacao">
+ <summary>
+ Subrotina para cancelar qualquer tipo de operação em execução
+ </summary>
+</member>
 </members>
 </doc>

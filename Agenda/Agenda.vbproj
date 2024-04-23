@@ -162,5 +162,10 @@
   <ItemGroup>
     <None Include="Resources\2931184_normal_regular_zoom_glass_magnifier_icon.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Agenda.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
