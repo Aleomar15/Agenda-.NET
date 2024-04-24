@@ -6,6 +6,7 @@ Public Class CAD_CLIENTE
     Public Property NOME As String
     Public Property CEP As String
     Public Property BAIRRO As String
+    Public Property ENDERECO As String
     Public Property COMPLEMENTO As String
     Public Property UF As String
     Public Property TEL1 As String
@@ -14,7 +15,7 @@ Public Class CAD_CLIENTE
 
 #End Region
 #Region "variaveis"
-    Private DBCon As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source= AGENDA.ACCDB;Persist Security Info=False;") 'conexão com o db
+    Private DBCon As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source= Agenda.accdb;Persist Security Info=False;") 'conexão com o db
     Private DBCmd As OleDb.OleDbCommand 'variavel de comando onde será executado o SQL
     Private DBDa As OleDb.OleDbDataAdapter 'recebe os dados
     Private objDR As OleDb.OleDbDataReader 'le os dados

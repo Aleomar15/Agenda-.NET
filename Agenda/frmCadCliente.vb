@@ -176,10 +176,107 @@
         'Declaração de classe
         Dim obj As New CAD_CLIENTE
 
+        Dim strSQL As New Text.StringBuilder
+
         Try
             'Preenche dados
             If txtId.TextLength > 0 Then obj.ID = Convert.ToInt32(txtId.Text)
             obj.NOME = txtNome.Text
+            obj.CEP = txtCEP.Text
+            obj.ENDERECO = txtEndereco.Text
+            obj.BAIRRO = txtBairro.Text
+            obj.UF = txtUF.Text
+            obj.NUMERO = txtNumero.Text
+            obj.COMPLEMENTO = txtComplemento.Text
+            obj.TEL1 = txtTel1.Text
+            obj.TEL2 = txtTel2.Text
+
+            'Adiciona parametros
+            obj.AddParam("@nome", obj.NOME)
+            obj.AddParam("@cep", obj.CEP)
+            obj.AddParam("@endereco", obj.ENDERECO)
+            obj.AddParam("@bairro", obj.BAIRRO)
+            obj.AddParam("@uf", obj.UF)
+            obj.AddParam("@numero", obj.NUMERO)
+            obj.AddParam("@complemento", obj.COMPLEMENTO)
+            obj.AddParam("@tel1", obj.TEL1)
+            obj.AddParam("@tel2", obj.TEL2)
+            'Seleciona opção
+            Select Case intOpcao
+                Case Opcao.Incluir 'inclui novo cliente
+                    strSQL.Append("INSERT INTO CAD_CLIENTE (NOME,CEP,ENDERECO,BAIRRO,UF,NUMERO,COMPLEMENTO,TEL1,TEL2) VALUES ")
+                    strSQL.Append(" @nome,")
+                    strSQL.Append(" @cep,")
+                    strSQL.Append(" @endereco,")
+                    strSQL.Append(" @bairro,")
+                    strSQL.Append(" @uf,")
+                    strSQL.Append(" @numero,")
+                    strSQL.Append(" @complemento,")
+                    strSQL.Append(" @tel1,")
+                    strSQL.Append(" @tel2")
+
+                    'Inclui no banco
+                    If obj.ExecutaQuery(strSQL.ToString) = True Then
+                        If MessageBox.Show("Cliente incluindo com sucesso!" & vbNewLine & "Deseja incluir outro?", "Aviso", MessageBoxButtons.YesNo, MessageBoxIcon.Information) = DialogResult.Yes Then
+                            'Setar operação como cancelar
+                            intOpcao = Opcao.Cancelar
+
+                            'Chama a subrotina para cancelar
+                            CancelaOperacao()
+
+                            'Chama subrotina para Incluir
+                            tsbIncluir_Click(Nothing, Nothing)
+                        Else
+                            'Setar operação como cancelar
+                            intOpcao = Opcao.Cancelar
+
+                            'Chama a subrotina para cancelar
+                            CancelaOperacao()
+                        End If
+                    Else
+                        MessageBox.Show("Problema ao gravar dados, tente novamente mais tarde!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                    End If
+
+                Case Opcao.Editar 'Alterar o cliente
+                    obj.AddParam("@id", obj.ID)
+
+                    'Monto o comando de update
+                    strSQL.Append("UPDATE SET")
+                    strSQL.Append("nome = @nome,")
+                    strSQL.Append("cep = @ecp,")
+                    strSQL.Append("endereco = @endereco,")
+                    strSQL.Append("bairro = @bairro,")
+                    strSQL.Append("uf = @uf,")
+                    strSQL.Append("numero = @numero,")
+                    strSQL.Append("complemento = @complemento,")
+                    strSQL.Append("tel1 = @tel1,")
+                    strSQL.Append("tel2 = @tel2,")
+                    strSQL.Append("WHERE id = @id")
+
+                    'Atualiza o registro
+                    If obj.ExecutaQuery(strSQL.ToString) = True Then
+                        If MessageBox.Show("Cliente alteraado com sucesso!" & vbNewLine & "Deseja alterar outro?", "Aviso", MessageBoxButtons.YesNo, MessageBoxIcon.Information) = DialogResult.Yes Then
+                            'Setar operação como cancelar
+                            intOpcao = Opcao.Cancelar
+
+                            'Chama a subrotina para cancelar
+                            CancelaOperacao()
+
+                            'Chama subrotina para Alterar
+                            tsbEditar_Click(Nothing, Nothing)
+                        Else
+                            'Setar operação como cancelar
+                            intOpcao = Opcao.Cancelar
+
+                            'Chama a subrotina para cancelar
+                            CancelaOperacao()
+                        End If
+                    Else
+                        MessageBox.Show("Problema ao gravar dados, tente novamente mais tarde!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                    End If
+            End Select
+
+
 
         Catch ex As Exception
             MessageBox.Show("Ocorreu um erro:" & vbNewLine & ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error)
