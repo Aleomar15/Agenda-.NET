@@ -35,6 +35,8 @@ Partial Class frmCadCliente
         Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
         Me.ToolStripStatusLabel1 = New System.Windows.Forms.ToolStripStatusLabel()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.txtCidade = New System.Windows.Forms.TextBox()
+        Me.Label11 = New System.Windows.Forms.Label()
         Me.btnCorreio = New System.Windows.Forms.Button()
         Me.txtUF = New System.Windows.Forms.TextBox()
         Me.Label10 = New System.Windows.Forms.Label()
@@ -142,10 +144,11 @@ Partial Class frmCadCliente
         '
         Me.StatusStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripStatusLabel1})
-        Me.StatusStrip1.Location = New System.Drawing.Point(0, 395)
+        Me.StatusStrip1.Location = New System.Drawing.Point(0, 458)
         Me.StatusStrip1.Name = "StatusStrip1"
+        Me.StatusStrip1.Padding = New System.Windows.Forms.Padding(1, 0, 13, 0)
         Me.StatusStrip1.Size = New System.Drawing.Size(800, 26)
-        Me.StatusStrip1.TabIndex = 1
+        Me.StatusStrip1.TabIndex = 2
         Me.StatusStrip1.Text = "StatusStrip1"
         '
         'ToolStripStatusLabel1
@@ -157,6 +160,8 @@ Partial Class frmCadCliente
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.txtCidade)
+        Me.GroupBox1.Controls.Add(Me.Label11)
         Me.GroupBox1.Controls.Add(Me.btnCorreio)
         Me.GroupBox1.Controls.Add(Me.txtUF)
         Me.GroupBox1.Controls.Add(Me.Label10)
@@ -179,148 +184,179 @@ Partial Class frmCadCliente
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.txtId)
         Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Location = New System.Drawing.Point(13, 40)
+        Me.GroupBox1.Location = New System.Drawing.Point(13, 39)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(775, 352)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.GroupBox1.Size = New System.Drawing.Size(775, 393)
         Me.GroupBox1.TabIndex = 2
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "GroupBox1"
+        '
+        'txtCidade
+        '
+        Me.txtCidade.Enabled = False
+        Me.txtCidade.Location = New System.Drawing.Point(92, 182)
+        Me.txtCidade.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtCidade.Name = "txtCidade"
+        Me.txtCidade.Size = New System.Drawing.Size(677, 22)
+        Me.txtCidade.TabIndex = 13
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Location = New System.Drawing.Point(21, 185)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(51, 16)
+        Me.Label11.TabIndex = 12
+        Me.Label11.Text = "Cidade"
         '
         'btnCorreio
         '
         Me.btnCorreio.Enabled = False
         Me.btnCorreio.Image = Global.Agenda.My.Resources.Resources._2931184_normal_regular_zoom_glass_magnifier_icon1
-        Me.btnCorreio.Location = New System.Drawing.Point(198, 98)
+        Me.btnCorreio.Location = New System.Drawing.Point(197, 98)
+        Me.btnCorreio.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnCorreio.Name = "btnCorreio"
-        Me.btnCorreio.Size = New System.Drawing.Size(23, 24)
-        Me.btnCorreio.TabIndex = 21
+        Me.btnCorreio.Size = New System.Drawing.Size(32, 25)
+        Me.btnCorreio.TabIndex = 7
         Me.btnCorreio.UseVisualStyleBackColor = True
         '
         'txtUF
         '
         Me.txtUF.Enabled = False
-        Me.txtUF.Location = New System.Drawing.Point(92, 192)
+        Me.txtUF.Location = New System.Drawing.Point(92, 214)
+        Me.txtUF.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtUF.Name = "txtUF"
         Me.txtUF.Size = New System.Drawing.Size(100, 22)
-        Me.txtUF.TabIndex = 20
+        Me.txtUF.TabIndex = 15
         '
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(51, 198)
+        Me.Label10.Location = New System.Drawing.Point(51, 220)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(25, 16)
-        Me.Label10.TabIndex = 19
+        Me.Label10.TabIndex = 14
         Me.Label10.Text = "UF"
         '
         'btnPesquisar
         '
         Me.btnPesquisar.Enabled = False
         Me.btnPesquisar.Image = Global.Agenda.My.Resources.Resources._2931184_normal_regular_zoom_glass_magnifier_icon1
-        Me.btnPesquisar.Location = New System.Drawing.Point(198, 42)
+        Me.btnPesquisar.Location = New System.Drawing.Point(197, 43)
+        Me.btnPesquisar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnPesquisar.Name = "btnPesquisar"
-        Me.btnPesquisar.Size = New System.Drawing.Size(23, 24)
-        Me.btnPesquisar.TabIndex = 18
+        Me.btnPesquisar.Size = New System.Drawing.Size(32, 23)
+        Me.btnPesquisar.TabIndex = 2
         Me.btnPesquisar.UseVisualStyleBackColor = True
         '
         'txtTel2
         '
         Me.txtTel2.Enabled = False
-        Me.txtTel2.Location = New System.Drawing.Point(92, 317)
+        Me.txtTel2.Location = New System.Drawing.Point(92, 340)
+        Me.txtTel2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtTel2.Name = "txtTel2"
         Me.txtTel2.Size = New System.Drawing.Size(100, 22)
-        Me.txtTel2.TabIndex = 17
+        Me.txtTel2.TabIndex = 23
         '
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(21, 323)
+        Me.Label9.Location = New System.Drawing.Point(21, 344)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(71, 16)
-        Me.Label9.TabIndex = 16
+        Me.Label9.TabIndex = 22
         Me.Label9.Text = "Telefone 2"
         '
         'txtNumero
         '
         Me.txtNumero.Enabled = False
-        Me.txtNumero.Location = New System.Drawing.Point(92, 227)
+        Me.txtNumero.Location = New System.Drawing.Point(92, 248)
+        Me.txtNumero.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtNumero.Name = "txtNumero"
         Me.txtNumero.Size = New System.Drawing.Size(100, 22)
-        Me.txtNumero.TabIndex = 15
+        Me.txtNumero.TabIndex = 17
         '
         'txtComplemento
         '
         Me.txtComplemento.Enabled = False
-        Me.txtComplemento.Location = New System.Drawing.Point(92, 259)
+        Me.txtComplemento.Location = New System.Drawing.Point(92, 280)
+        Me.txtComplemento.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtComplemento.Name = "txtComplemento"
         Me.txtComplemento.Size = New System.Drawing.Size(677, 22)
-        Me.txtComplemento.TabIndex = 14
+        Me.txtComplemento.TabIndex = 19
         '
         'txtTel1
         '
         Me.txtTel1.Enabled = False
-        Me.txtTel1.Location = New System.Drawing.Point(92, 287)
+        Me.txtTel1.Location = New System.Drawing.Point(92, 309)
+        Me.txtTel1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtTel1.Name = "txtTel1"
         Me.txtTel1.Size = New System.Drawing.Size(100, 22)
-        Me.txtTel1.TabIndex = 13
+        Me.txtTel1.TabIndex = 21
         '
         'txtBairro
         '
         Me.txtBairro.Enabled = False
         Me.txtBairro.Location = New System.Drawing.Point(92, 156)
+        Me.txtBairro.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtBairro.Name = "txtBairro"
         Me.txtBairro.Size = New System.Drawing.Size(677, 22)
-        Me.txtBairro.TabIndex = 12
+        Me.txtBairro.TabIndex = 11
         '
         'txtEndereco
         '
         Me.txtEndereco.Enabled = False
         Me.txtEndereco.Location = New System.Drawing.Point(92, 128)
+        Me.txtEndereco.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtEndereco.Name = "txtEndereco"
         Me.txtEndereco.Size = New System.Drawing.Size(677, 22)
-        Me.txtEndereco.TabIndex = 11
+        Me.txtEndereco.TabIndex = 9
         '
         'txtCEP
         '
         Me.txtCEP.Enabled = False
         Me.txtCEP.Location = New System.Drawing.Point(92, 100)
+        Me.txtCEP.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtCEP.Name = "txtCEP"
         Me.txtCEP.Size = New System.Drawing.Size(100, 22)
-        Me.txtCEP.TabIndex = 10
+        Me.txtCEP.TabIndex = 6
         '
         'txtNome
         '
         Me.txtNome.Enabled = False
         Me.txtNome.Location = New System.Drawing.Point(92, 71)
+        Me.txtNome.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtNome.Name = "txtNome"
         Me.txtNome.Size = New System.Drawing.Size(677, 22)
-        Me.txtNome.TabIndex = 9
+        Me.txtNome.TabIndex = 4
         '
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(21, 290)
+        Me.Label8.Location = New System.Drawing.Point(21, 312)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(71, 16)
-        Me.Label8.TabIndex = 8
+        Me.Label8.TabIndex = 20
         Me.Label8.Text = "Telefone 1"
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(-3, 262)
+        Me.Label7.Location = New System.Drawing.Point(-3, 284)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(91, 16)
-        Me.Label7.TabIndex = 7
+        Me.Label7.TabIndex = 18
         Me.Label7.Text = "Complemento"
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(21, 233)
+        Me.Label6.Location = New System.Drawing.Point(21, 255)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(55, 16)
-        Me.Label6.TabIndex = 6
+        Me.Label6.TabIndex = 16
         Me.Label6.Text = "Numero"
         '
         'Label5
@@ -329,16 +365,16 @@ Partial Class frmCadCliente
         Me.Label5.Location = New System.Drawing.Point(21, 159)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(43, 16)
-        Me.Label5.TabIndex = 5
+        Me.Label5.TabIndex = 10
         Me.Label5.Text = "Bairro"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(21, 131)
+        Me.Label4.Location = New System.Drawing.Point(21, 130)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(66, 16)
-        Me.Label4.TabIndex = 4
+        Me.Label4.TabIndex = 8
         Me.Label4.Text = "Endereço"
         '
         'Label3
@@ -347,22 +383,23 @@ Partial Class frmCadCliente
         Me.Label3.Location = New System.Drawing.Point(21, 102)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(34, 16)
-        Me.Label3.TabIndex = 3
+        Me.Label3.TabIndex = 5
         Me.Label3.Text = "CEP"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(21, 77)
+        Me.Label2.Location = New System.Drawing.Point(21, 78)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(44, 16)
-        Me.Label2.TabIndex = 2
+        Me.Label2.TabIndex = 3
         Me.Label2.Text = "Nome"
         '
         'txtId
         '
         Me.txtId.Enabled = False
         Me.txtId.Location = New System.Drawing.Point(92, 43)
+        Me.txtId.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtId.Name = "txtId"
         Me.txtId.Size = New System.Drawing.Size(100, 22)
         Me.txtId.TabIndex = 1
@@ -380,13 +417,14 @@ Partial Class frmCadCliente
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 421)
+        Me.ClientSize = New System.Drawing.Size(800, 484)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.StatusStrip1)
         Me.Controls.Add(Me.ToolStrip1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.KeyPreview = True
+        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.MaximizeBox = False
         Me.Name = "frmCadCliente"
         Me.Text = "Cadastro Cliente"
@@ -435,4 +473,6 @@ Partial Class frmCadCliente
     Friend WithEvents txtUF As TextBox
     Friend WithEvents Label10 As Label
     Friend WithEvents btnCorreio As Button
+    Friend WithEvents txtCidade As TextBox
+    Friend WithEvents Label11 As Label
 End Class

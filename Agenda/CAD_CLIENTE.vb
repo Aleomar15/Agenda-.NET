@@ -12,10 +12,11 @@ Public Class CAD_CLIENTE
     Public Property TEL1 As String
     Public Property TEL2 As String
     Public Property NUMERO As String
+    Public Property CIDADE As String
 
 #End Region
 #Region "variaveis"
-    Private DBCon As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source= Agenda.accdb;Persist Security Info=False;") 'conexão com o db
+    Private DBCon As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=Agenda.accdb;Persist Security Info=False;") 'conexão com o db
     Private DBCmd As OleDb.OleDbCommand 'variavel de comando onde será executado o SQL
     Private DBDa As OleDb.OleDbDataAdapter 'recebe os dados
     Private objDR As OleDb.OleDbDataReader 'le os dados
@@ -57,6 +58,9 @@ Public Class CAD_CLIENTE
                 If Not IsDBNull(objDR("ENDERECO")) Then
                     Me.NOME = objDR("ENDERECO").ToString
                 End If
+                If Not IsDBNull(objDR("CEP")) Then
+                    Me.NOME = objDR("CEP").ToString
+                End If
                 If Not IsDBNull(objDR("NUMERO")) Then
                     Me.NOME = objDR("NUMERO").ToString
                 End If
@@ -74,6 +78,9 @@ Public Class CAD_CLIENTE
                 End If
                 If Not IsDBNull(objDR("TEL2")) Then
                     Me.NOME = objDR("TEL2").ToString
+                End If
+                If Not IsDBNull(objDR("CIDADE")) Then
+                    Me.NOME = objDR("CIDADE").ToString
                 End If
                 blnOK = True
 

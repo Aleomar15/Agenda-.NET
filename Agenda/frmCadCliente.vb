@@ -11,6 +11,9 @@
 
 #End Region
 #Region "Subrotinas"
+    Private Sub Pesq()
+
+    End Sub
     ''' <summary>
     ''' Subtina para ativar e desativar os componentes do formulário
     ''' </summary>
@@ -30,6 +33,7 @@
         txtComplemento.Enabled = Status
         txtTel1.Enabled = Status
         txtTel2.Enabled = Status
+        txtCidade.Enabled = Status
 
 
     End Sub
@@ -61,7 +65,7 @@
         txtComplemento.Clear()
         txtTel1.Clear()
         txtTel2.Clear()
-
+        txtCidade.Clear()
 
         'Chamar sub rotina para desativar componentes
         AtivaDesativa(False)
@@ -190,6 +194,7 @@
             obj.COMPLEMENTO = txtComplemento.Text
             obj.TEL1 = txtTel1.Text
             obj.TEL2 = txtTel2.Text
+            obj.CIDADE = txtCidade.Text
 
             'Adiciona parametros
             obj.AddParam("@nome", obj.NOME)
@@ -201,20 +206,21 @@
             obj.AddParam("@complemento", obj.COMPLEMENTO)
             obj.AddParam("@tel1", obj.TEL1)
             obj.AddParam("@tel2", obj.TEL2)
+            obj.AddParam("@cidade", obj.CIDADE)
             'Seleciona opção
             Select Case intOpcao
                 Case Opcao.Incluir 'inclui novo cliente
-                    strSQL.Append("INSERT INTO CAD_CLIENTE (NOME,CEP,ENDERECO,BAIRRO,UF,NUMERO,COMPLEMENTO,TEL1,TEL2) VALUES ")
-                    strSQL.Append(" @nome,")
-                    strSQL.Append(" @cep,")
-                    strSQL.Append(" @endereco,")
-                    strSQL.Append(" @bairro,")
-                    strSQL.Append(" @uf,")
-                    strSQL.Append(" @numero,")
-                    strSQL.Append(" @complemento,")
-                    strSQL.Append(" @tel1,")
-                    strSQL.Append(" @tel2")
-
+                    strSQL.Append("INSERT INTO CAD_CLIENTE (NOME, CEP, ENDERECO, BAIRRO, UF, NUMERO, COMPLEMENTO, TEL1, TEL2, CIDADE) VALUES (")
+                    strSQL.Append("@nome,")
+                    strSQL.Append("@cep,")
+                    strSQL.Append("@endereco,")
+                    strSQL.Append("@bairro,")
+                    strSQL.Append("@uf,")
+                    strSQL.Append("@numero,")
+                    strSQL.Append("@complemento,")
+                    strSQL.Append("@tel1,")
+                    strSQL.Append("@tel2,")
+                    strSQL.Append("@cidade)")
                     'Inclui no banco
                     If obj.ExecutaQuery(strSQL.ToString) = True Then
                         If MessageBox.Show("Cliente incluindo com sucesso!" & vbNewLine & "Deseja incluir outro?", "Aviso", MessageBoxButtons.YesNo, MessageBoxIcon.Information) = DialogResult.Yes Then
@@ -241,7 +247,7 @@
                     obj.AddParam("@id", obj.ID)
 
                     'Monto o comando de update
-                    strSQL.Append("UPDATE SET")
+                    strSQL.Append("UPDATE CAD_CLIENTE SET")
                     strSQL.Append("nome = @nome,")
                     strSQL.Append("cep = @ecp,")
                     strSQL.Append("endereco = @endereco,")
@@ -251,6 +257,7 @@
                     strSQL.Append("complemento = @complemento,")
                     strSQL.Append("tel1 = @tel1,")
                     strSQL.Append("tel2 = @tel2,")
+                    strSQL.Append("cidade = @cidade,")
                     strSQL.Append("WHERE id = @id")
 
                     'Atualiza o registro
@@ -283,5 +290,86 @@
         Finally
             obj = Nothing
         End Try
+    End Sub
+
+    Private Sub txtId_KeyDown(sender As Object, e As KeyEventArgs) Handles txtId.KeyDown
+        If txtId.TextLength > 0 And e.KeyCode = Keys.Enter Then
+            'Cria a classe
+            Dim obj As New CAD_CLIENTE
+            Dim strSQL As New Text.StringBuilder
+
+            Try
+                'Adiciono parametro
+                obj.AddParam("@id", txtId.Text)
+
+                'Monta um Select
+                strSQL.Append("SELECT * FROM CAD_CLIENTE WHERE id = @id")
+
+                'Executa
+                If obj.ExecutaQueryReader(strSQL.ToString) = True Then
+                    'Preenche informações do cliente
+                    txtNome.Text = obj.NOME
+                    txtCEP.Text = obj.CEP
+                    txtEndereco.Text = obj.ENDERECO
+                    txtBairro.Text = obj.BAIRRO
+                    txtUF.Text = obj.UF
+                    txtNumero.Text = obj.NUMERO
+                    txtComplemento.Text = obj.COMPLEMENTO
+                    txtTel1.Text = obj.TEL1
+                    txtTel2.Text = obj.TEL2
+                    txtCidade.Text = obj.CIDADE
+
+
+                    If intOpcao = Opcao.Editar Then
+                        txtId.Enabled = False
+                        btnPesquisar.Enabled = False
+                        tsbSave.Enabled = True
+                        AtivaDesativa(True)
+
+                    End If
+
+                Else
+                    MessageBox.Show("ID cliente não cadastrado!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                End If
+            Catch ex As Exception
+                MessageBox.Show("Ocorreu um erro:" & vbNewLine & ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            Finally
+                obj = Nothing
+            End Try
+        ElseIf txtId.TextLength = 0 And e.KeyCode = Keys.Enter Then
+            'Chama subrotina para abrir o formulario de pesquisa
+            Pesq()
+        End If
+    End Sub
+
+    Private Sub btnPesquisar_Click(sender As Object, e As EventArgs) Handles btnPesquisar.Click
+        'Chama subrotina para abrir o formulario de pesquisa
+        Pesq()
+    End Sub
+
+    Private Sub btnCorreio_Click(sender As Object, e As EventArgs) Handles btnCorreio.Click
+        Try
+            If txtCEP.TextLength > 0 Then
+                Dim Correio As New WSCorreios.AtendeClienteClient
+                Dim Resposta = Correio.consultaCEP(txtCEP.Text, "user", "senha") 'deve colocar a senha e usuario
+
+                txtEndereco.Text = Resposta.end
+                txtBairro.Text = Resposta.bairro
+                txtUF.Text = Resposta.uf
+                txtComplemento.Text = Resposta.complemento2
+                txtCidade.Text = Resposta.cidade
+
+
+            End If
+
+
+
+        Catch ex As Exception
+            MessageBox.Show("Ocorreu um erro:" & vbNewLine & ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
+    End Sub
+
+    Private Sub frmCadCliente_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
     End Sub
 End Class

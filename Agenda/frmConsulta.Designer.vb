@@ -23,22 +23,25 @@ Partial Class frmConsulta
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.txtNome = New System.Windows.Forms.TextBox()
-        Me.Label2 = New System.Windows.Forms.Label()
         Me.txtCEP = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.txtNome = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.dgvDados = New System.Windows.Forms.DataGridView()
         Me.colId = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colNome = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colCEP = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colEndereco = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Cidade = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colNumero = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colBairro = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colUF = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colComplemento = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colTel1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colTel2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.btnConsultar = New System.Windows.Forms.Button()
+        Me.btnCancelar = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         CType(Me.dgvDados, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -46,6 +49,8 @@ Partial Class frmConsulta
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.btnCancelar)
+        Me.GroupBox1.Controls.Add(Me.btnConsultar)
         Me.GroupBox1.Controls.Add(Me.txtCEP)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.txtNome)
@@ -57,21 +62,12 @@ Partial Class frmConsulta
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Filtrar por:"
         '
-        'Label1
+        'txtCEP
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(8, 31)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(47, 16)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Nome:"
-        '
-        'txtNome
-        '
-        Me.txtNome.Location = New System.Drawing.Point(62, 31)
-        Me.txtNome.Name = "txtNome"
-        Me.txtNome.Size = New System.Drawing.Size(437, 22)
-        Me.txtNome.TabIndex = 1
+        Me.txtCEP.Location = New System.Drawing.Point(567, 31)
+        Me.txtCEP.Name = "txtCEP"
+        Me.txtCEP.Size = New System.Drawing.Size(100, 22)
+        Me.txtCEP.TabIndex = 3
         '
         'Label2
         '
@@ -82,12 +78,21 @@ Partial Class frmConsulta
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "CEP:"
         '
-        'txtCEP
+        'txtNome
         '
-        Me.txtCEP.Location = New System.Drawing.Point(567, 31)
-        Me.txtCEP.Name = "txtCEP"
-        Me.txtCEP.Size = New System.Drawing.Size(100, 22)
-        Me.txtCEP.TabIndex = 3
+        Me.txtNome.Location = New System.Drawing.Point(62, 31)
+        Me.txtNome.Name = "txtNome"
+        Me.txtNome.Size = New System.Drawing.Size(437, 22)
+        Me.txtNome.TabIndex = 1
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(8, 31)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(47, 16)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "Nome:"
         '
         'GroupBox2
         '
@@ -109,7 +114,7 @@ Partial Class frmConsulta
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.dgvDados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvDados.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.colId, Me.colNome, Me.colCEP, Me.colEndereco, Me.colNumero, Me.colBairro, Me.colUF, Me.colComplemento, Me.colTel1, Me.colTel2})
+        Me.dgvDados.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.colId, Me.colNome, Me.colCEP, Me.colEndereco, Me.Cidade, Me.colNumero, Me.colBairro, Me.colUF, Me.colComplemento, Me.colTel1, Me.colTel2})
         Me.dgvDados.Location = New System.Drawing.Point(-1, 9)
         Me.dgvDados.Name = "dgvDados"
         Me.dgvDados.ReadOnly = True
@@ -153,6 +158,15 @@ Partial Class frmConsulta
         Me.colEndereco.Name = "colEndereco"
         Me.colEndereco.ReadOnly = True
         Me.colEndereco.Width = 125
+        '
+        'Cidade
+        '
+        Me.Cidade.DataPropertyName = "CIDADE"
+        Me.Cidade.HeaderText = "Ciadade"
+        Me.Cidade.MinimumWidth = 6
+        Me.Cidade.Name = "Cidade"
+        Me.Cidade.ReadOnly = True
+        Me.Cidade.Width = 125
         '
         'colNumero
         '
@@ -208,6 +222,24 @@ Partial Class frmConsulta
         Me.colTel2.ReadOnly = True
         Me.colTel2.Width = 125
         '
+        'btnConsultar
+        '
+        Me.btnConsultar.Location = New System.Drawing.Point(694, 11)
+        Me.btnConsultar.Name = "btnConsultar"
+        Me.btnConsultar.Size = New System.Drawing.Size(75, 23)
+        Me.btnConsultar.TabIndex = 4
+        Me.btnConsultar.Text = "Consultar"
+        Me.btnConsultar.UseVisualStyleBackColor = True
+        '
+        'btnCancelar
+        '
+        Me.btnCancelar.Location = New System.Drawing.Point(694, 40)
+        Me.btnCancelar.Name = "btnCancelar"
+        Me.btnCancelar.Size = New System.Drawing.Size(75, 23)
+        Me.btnCancelar.TabIndex = 5
+        Me.btnCancelar.Text = "Cancelar"
+        Me.btnCancelar.UseVisualStyleBackColor = True
+        '
         'frmConsulta
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -237,10 +269,13 @@ Partial Class frmConsulta
     Friend WithEvents colNome As DataGridViewTextBoxColumn
     Friend WithEvents colCEP As DataGridViewTextBoxColumn
     Friend WithEvents colEndereco As DataGridViewTextBoxColumn
+    Friend WithEvents Cidade As DataGridViewTextBoxColumn
     Friend WithEvents colNumero As DataGridViewTextBoxColumn
     Friend WithEvents colBairro As DataGridViewTextBoxColumn
     Friend WithEvents colUF As DataGridViewTextBoxColumn
     Friend WithEvents colComplemento As DataGridViewTextBoxColumn
     Friend WithEvents colTel1 As DataGridViewTextBoxColumn
     Friend WithEvents colTel2 As DataGridViewTextBoxColumn
+    Friend WithEvents btnCancelar As Button
+    Friend WithEvents btnConsultar As Button
 End Class
