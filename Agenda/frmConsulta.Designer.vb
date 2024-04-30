@@ -23,6 +23,8 @@ Partial Class frmConsulta
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.btnCancelar = New System.Windows.Forms.Button()
+        Me.btnConsultar = New System.Windows.Forms.Button()
         Me.txtCEP = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.txtNome = New System.Windows.Forms.TextBox()
@@ -40,8 +42,6 @@ Partial Class frmConsulta
         Me.colComplemento = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colTel1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colTel2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.btnConsultar = New System.Windows.Forms.Button()
-        Me.btnCancelar = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         CType(Me.dgvDados, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -61,6 +61,25 @@ Partial Class frmConsulta
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Filtrar por:"
+        '
+        'btnCancelar
+        '
+        Me.btnCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel
+        Me.btnCancelar.Location = New System.Drawing.Point(694, 40)
+        Me.btnCancelar.Name = "btnCancelar"
+        Me.btnCancelar.Size = New System.Drawing.Size(75, 23)
+        Me.btnCancelar.TabIndex = 5
+        Me.btnCancelar.Text = "Cancelar"
+        Me.btnCancelar.UseVisualStyleBackColor = True
+        '
+        'btnConsultar
+        '
+        Me.btnConsultar.Location = New System.Drawing.Point(694, 11)
+        Me.btnConsultar.Name = "btnConsultar"
+        Me.btnConsultar.Size = New System.Drawing.Size(75, 23)
+        Me.btnConsultar.TabIndex = 4
+        Me.btnConsultar.Text = "Consultar"
+        Me.btnConsultar.UseVisualStyleBackColor = True
         '
         'txtCEP
         '
@@ -222,28 +241,11 @@ Partial Class frmConsulta
         Me.colTel2.ReadOnly = True
         Me.colTel2.Width = 125
         '
-        'btnConsultar
-        '
-        Me.btnConsultar.Location = New System.Drawing.Point(694, 11)
-        Me.btnConsultar.Name = "btnConsultar"
-        Me.btnConsultar.Size = New System.Drawing.Size(75, 23)
-        Me.btnConsultar.TabIndex = 4
-        Me.btnConsultar.Text = "Consultar"
-        Me.btnConsultar.UseVisualStyleBackColor = True
-        '
-        'btnCancelar
-        '
-        Me.btnCancelar.Location = New System.Drawing.Point(694, 40)
-        Me.btnCancelar.Name = "btnCancelar"
-        Me.btnCancelar.Size = New System.Drawing.Size(75, 23)
-        Me.btnCancelar.TabIndex = 5
-        Me.btnCancelar.Text = "Cancelar"
-        Me.btnCancelar.UseVisualStyleBackColor = True
-        '
         'frmConsulta
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.CancelButton = Me.btnCancelar
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)

@@ -350,8 +350,11 @@
     <WCFMetadataStorage Include="Connected Services\WSCorreios\" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\2931168_bin_delete_remove_trash_garbage_icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
     <Content Include="Agenda.accdb">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />

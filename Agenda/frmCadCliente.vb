@@ -12,7 +12,17 @@
 #End Region
 #Region "Subrotinas"
     Private Sub Pesq()
+        'Configurar o fomulario de pesquisa
+        Using frmPesq As New frmConsulta
+            frmPesq.AbertoCliente = True
+            frmPesq.ShowDialog(Me)
+            If frmPesq.Codigo > 0 Then
+                Dim enter As New KeyEventArgs(Keys.Enter)
+                txtId.Text = frmPesq.Codigo
+                txtId_KeyDown(Nothing, enter)
 
+            End If
+        End Using
     End Sub
     ''' <summary>
     ''' Subtina para ativar e desativar os componentes do formulário
@@ -76,6 +86,8 @@
         tsbPesquisar.Enabled = True
         tsbSave.Enabled = False
         tsbCancelar.Enabled = False
+        tsbRemover.Enabled = False
+
 
 
     End Sub
@@ -324,6 +336,7 @@
                         txtId.Enabled = False
                         btnPesquisar.Enabled = False
                         tsbSave.Enabled = True
+                        tsbRemover.Enabled = True
                         AtivaDesativa(True)
 
                     End If
@@ -366,10 +379,46 @@
 
         Catch ex As Exception
             MessageBox.Show("Ocorreu um erro:" & vbNewLine & ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            MessageBox.Show("Devido a atualização dos termos dos correios é necessario fazer login, como consequencia essa opção dará erro.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
         End Try
     End Sub
 
     Private Sub frmCadCliente_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+    End Sub
+
+    Private Sub tsbRemover_Click(sender As Object, e As EventArgs) Handles tsbRemover.Click
+        Dim obj As New CAD_CLIENTE
+
+        Dim strSQL As String = Nothing
+
+        Try
+            'Pergunta opara o usuario
+            If MessageBox.Show("Você tem certeza que deseja remover o cliente selecionado?", "Aviso", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button2) Then
+
+                'Setando parametros
+                obj.ID = Convert.ToInt32(txtId.Text)
+                obj.AddParam("@id", obj.ID)
+
+                'Monta SQL
+                strSQL = "DELETE FROM CAD_CLIENTE WHERE ID = @id"
+
+                'Remove o registro
+                If obj.ExecutaQuery(strSQL) = True Then
+                    MessageBox.Show("Registro removido com sucesso!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information)
+
+                    'Seta tipo de operação
+                    intOpcao = Opcao.Cancelar
+
+                    tsbCancelar_Click(Nothing, Nothing)
+                Else
+                    MessageBox.Show("Registro não encontrado", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                End If
+            End If
+        Catch ex As Exception
+            MessageBox.Show("Ocorreu um erro:" & vbNewLine & ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        Finally
+            obj = Nothing
+        End Try
     End Sub
 End Class
