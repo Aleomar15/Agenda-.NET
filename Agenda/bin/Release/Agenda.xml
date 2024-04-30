@@ -1,0 +1,1420 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Agenda
+</name>
+</assembly>
+<members>
+<member name="T:Agenda.My.Resources.Resources">
+<summary>
+  Uma classe de recurso de tipo de alta segurança, para pesquisar cadeias de caracteres localizadas etc.
+</summary>
+</member>
+<member name="P:Agenda.My.Resources.Resources.ResourceManager">
+<summary>
+  Retorna a instância de ResourceManager armazenada em cache usada por essa classe.
+</summary>
+</member>
+<member name="P:Agenda.My.Resources.Resources.Culture">
+<summary>
+  Substitui a propriedade CurrentUICulture do thread atual para todas as
+  pesquisas de recursos que usam essa classe de recurso de tipo de alta segurança.
+</summary>
+</member>
+<member name="P:Agenda.My.Resources.Resources._2931147_user_face_avatar_account_head_icon">
+<summary>
+  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Agenda.My.Resources.Resources._2931151_close_delete_exit_remove_x_icon">
+<summary>
+  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Agenda.My.Resources.Resources._2931155_add_attach_create_maximize_new_icon">
+<summary>
+  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Agenda.My.Resources.Resources._2931168_bin_delete_remove_trash_garbage_icon">
+<summary>
+  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Agenda.My.Resources.Resources._2931178_change_edit_pencil_creative_design_icon">
+<summary>
+  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Agenda.My.Resources.Resources._2931184_normal_regular_zoom_glass_magnifier_icon">
+<summary>
+  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Agenda.My.Resources.Resources._2931184_normal_regular_zoom_glass_magnifier_icon1">
+<summary>
+  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Agenda.My.Resources.Resources._2931187_door_enter_exit_in_leave_icon">
+<summary>
+  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Agenda.My.Resources.Resources.SaveIcon">
+<summary>
+  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="M:Agenda.CAD_CLIENTE.ExecutaQueryReader(System.String)">
+ <summary>
+ Função para consulta e retorno dos dados nas propiedades
+ </summary>
+ <param name="Query">passa o comando SQL</param>
+ <returns></returns>
+</member>
+<member name="M:Agenda.CAD_CLIENTE.ExecutaQuery(System.String)">
+ <summary>
+ Função para executar Insert, Update e Delete
+ </summary>
+ <param name="sql">passa o camendo SQL</param>
+ <returns></returns>
+</member>
+<member name="M:Agenda.CAD_CLIENTE.ExecutaQueryDataTable(System.String)">
+ <summary>
+ Função para execuatar Select com retorno de mais um Resultado
+ </summary>
+ <param name="sql">Passa o comando SQL</param>
+ <returns></returns>
+</member>
+<member name="T:Agenda.WSCorreios.SQLException">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.SQLException.errorCode">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.SQLException.errorCodeSpecified">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.SQLException.sQLState">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.SQLException.message">
+<remarks/>
+</member>
+<member name="T:Agenda.WSCorreios.servicoAdicionalXML">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.servicoAdicionalXML.categoria">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.servicoAdicionalXML.codigo">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.servicoAdicionalXML.descricao">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.servicoAdicionalXML.maximoValorDeclarado">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.servicoAdicionalXML.maximoValorDeclaradoSpecified">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.servicoAdicionalXML.minimoValorDeclarado">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.servicoAdicionalXML.minimoValorDeclaradoSpecified">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.servicoAdicionalXML.sigla">
+<remarks/>
+</member>
+<member name="T:Agenda.WSCorreios.Exception">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.Exception.message">
+<remarks/>
+</member>
+<member name="T:Agenda.WSCorreios.ErroMontagemRelatorio">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.ErroMontagemRelatorio.message">
+<remarks/>
+</member>
+<member name="T:Agenda.WSCorreios.objetoPostal">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.objetoPostal.codigoEtiqueta">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.objetoPostal.dataAtualizacaoCliente">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.objetoPostal.dataAtualizacaoClienteSpecified">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.objetoPostal.dataBloqueioObjeto">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.objetoPostal.dataBloqueioObjetoSpecified">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.objetoPostal.dataCancelamentoEtiqueta">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.objetoPostal.dataCancelamentoEtiquetaSpecified">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.objetoPostal.dataInclusao">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.objetoPostal.dataInclusaoSpecified">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.objetoPostal.objetoPostalPK">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.objetoPostal.plpNu">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.objetoPostal.plpNuSpecified">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.objetoPostal.preListaPostagem">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.objetoPostal.restricaoAerea">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.objetoPostal.restricaoAereaSpecified">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.objetoPostal.statusBloqueio">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.objetoPostal.statusEtiqueta">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.objetoPostal.statusEtiquetaSpecified">
+<remarks/>
+</member>
+<member name="T:Agenda.WSCorreios.objetoPostalPK">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.objetoPostalPK.codigoEtiqueta">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.objetoPostalPK.plpNu">
+<remarks/>
+</member>
+<member name="T:Agenda.WSCorreios.preListaPostagem">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.preListaPostagem.cartaoPostagem">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.preListaPostagem.conteudoProibido">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.preListaPostagem.conteudoProibidoSpecified">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.preListaPostagem.dataAtualizacaoCliente">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.preListaPostagem.dataAtualizacaoClienteSpecified">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.preListaPostagem.dataAtualizacaoSara">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.preListaPostagem.dataAtualizacaoSaraSpecified">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.preListaPostagem.dataFechamento">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.preListaPostagem.dataFechamentoSpecified">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.preListaPostagem.dataPostagem">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.preListaPostagem.dataPostagemSpecified">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.preListaPostagem.dataPostagemSara">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.preListaPostagem.dataPostagemSaraSpecified">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.preListaPostagem.objetosPostais">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.preListaPostagem.plpCliente">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.preListaPostagem.plpNu">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.preListaPostagem.plpXml">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.preListaPostagem.plpXmlRetorno">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.preListaPostagem.status">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.preListaPostagem.statusSpecified">
+<remarks/>
+</member>
+<member name="T:Agenda.WSCorreios.cartaoPostagemERP">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.cartaoPostagemERP.codigoAdministrativo">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.cartaoPostagemERP.contratos">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.cartaoPostagemERP.dataAtualizacao">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.cartaoPostagemERP.dataAtualizacaoSpecified">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.cartaoPostagemERP.dataVigenciaFim">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.cartaoPostagemERP.dataVigenciaFimSpecified">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.cartaoPostagemERP.dataVigenciaInicio">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.cartaoPostagemERP.dataVigenciaInicioSpecified">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.cartaoPostagemERP.datajAtualizacao">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.cartaoPostagemERP.datajAtualizacaoSpecified">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.cartaoPostagemERP.datajVigenciaFim">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.cartaoPostagemERP.datajVigenciaFimSpecified">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.cartaoPostagemERP.datajVigenciaInicio">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.cartaoPostagemERP.datajVigenciaInicioSpecified">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.cartaoPostagemERP.descricaoStatusCartao">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.cartaoPostagemERP.descricaoUnidadePostagemGenerica">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.cartaoPostagemERP.horajAtualizacao">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.cartaoPostagemERP.horajAtualizacaoSpecified">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.cartaoPostagemERP.numero">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.cartaoPostagemERP.servicos">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.cartaoPostagemERP.statusCartaoPostagem">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.cartaoPostagemERP.statusCodigo">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.cartaoPostagemERP.unidadeGenerica">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.cartaoPostagemERP.unidadesPostagem">
+<remarks/>
+</member>
+<member name="T:Agenda.WSCorreios.contratoERP">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.contratoERP.cartoesPostagem">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.contratoERP.cliente">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.contratoERP.codigoCliente">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.contratoERP.codigoDiretoria">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.contratoERP.contratoPK">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.contratoERP.dataAtualizacao">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.contratoERP.dataAtualizacaoSpecified">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.contratoERP.dataAtualizacaoDDMMYYYY">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.contratoERP.dataVigenciaFim">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.contratoERP.dataVigenciaFimSpecified">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.contratoERP.dataVigenciaFimDDMMYYYY">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.contratoERP.dataVigenciaInicio">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.contratoERP.dataVigenciaInicioSpecified">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.contratoERP.dataVigenciaInicioDDMMYYYY">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.contratoERP.datajAtualizacao">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.contratoERP.datajAtualizacaoSpecified">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.contratoERP.datajVigenciaFim">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.contratoERP.datajVigenciaFimSpecified">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.contratoERP.datajVigenciaInicio">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.contratoERP.datajVigenciaInicioSpecified">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.contratoERP.descricaoDiretoriaRegional">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.contratoERP.descricaoStatus">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.contratoERP.diretoriaRegional">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.contratoERP.horajAtualizacao">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.contratoERP.horajAtualizacaoSpecified">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.contratoERP.statusCodigo">
+<remarks/>
+</member>
+<member name="T:Agenda.WSCorreios.clienteERP">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.clienteERP.cnpj">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.clienteERP.contratos">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.clienteERP.dataAtualizacao">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.clienteERP.dataAtualizacaoSpecified">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.clienteERP.datajAtualizacao">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.clienteERP.datajAtualizacaoSpecified">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.clienteERP.descricaoStatusCliente">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.clienteERP.gerenteConta">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.clienteERP.horajAtualizacao">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.clienteERP.horajAtualizacaoSpecified">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.clienteERP.id">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.clienteERP.inscricaoEstadual">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.clienteERP.nome">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.clienteERP.statusCodigo">
+<remarks/>
+</member>
+<member name="T:Agenda.WSCorreios.gerenteConta">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.gerenteConta.clientesVisiveis">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.gerenteConta.dataAtualizacao">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.gerenteConta.dataAtualizacaoSpecified">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.gerenteConta.dataInclusao">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.gerenteConta.dataInclusaoSpecified">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.gerenteConta.dataSenha">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.gerenteConta.dataSenhaSpecified">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.gerenteConta.login">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.gerenteConta.matricula">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.gerenteConta.senha">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.gerenteConta.status">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.gerenteConta.statusSpecified">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.gerenteConta.tipoGerente">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.gerenteConta.tipoGerenteSpecified">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.gerenteConta.usuariosInstalacao">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.gerenteConta.validade">
+<remarks/>
+</member>
+<member name="T:Agenda.WSCorreios.statusGerente">
+<remarks/>
+</member>
+<member name="F:Agenda.WSCorreios.statusGerente.Ativo">
+<remarks/>
+</member>
+<member name="F:Agenda.WSCorreios.statusGerente.Inativo">
+<remarks/>
+</member>
+<member name="T:Agenda.WSCorreios.tipoGerente">
+<remarks/>
+</member>
+<member name="F:Agenda.WSCorreios.tipoGerente.GerenteConta">
+<remarks/>
+</member>
+<member name="F:Agenda.WSCorreios.tipoGerente.GerenteContaMaster">
+<remarks/>
+</member>
+<member name="T:Agenda.WSCorreios.usuarioInstalacao">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.usuarioInstalacao.dataAtualizacao">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.usuarioInstalacao.dataAtualizacaoSpecified">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.usuarioInstalacao.dataInclusao">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.usuarioInstalacao.dataInclusaoSpecified">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.usuarioInstalacao.dataSenha">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.usuarioInstalacao.dataSenhaSpecified">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.usuarioInstalacao.gerenteMaster">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.usuarioInstalacao.hashSenha">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.usuarioInstalacao.id">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.usuarioInstalacao.idSpecified">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.usuarioInstalacao.login">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.usuarioInstalacao.nome">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.usuarioInstalacao.parametros">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.usuarioInstalacao.senha">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.usuarioInstalacao.status">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.usuarioInstalacao.statusSpecified">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.usuarioInstalacao.validade">
+<remarks/>
+</member>
+<member name="T:Agenda.WSCorreios.parametroMaster">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.parametroMaster.prmCoParametro">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.parametroMaster.prmTxParametro">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.parametroMaster.prmTxValor">
+<remarks/>
+</member>
+<member name="T:Agenda.WSCorreios.statusUsuario">
+<remarks/>
+</member>
+<member name="F:Agenda.WSCorreios.statusUsuario.Ativo">
+<remarks/>
+</member>
+<member name="F:Agenda.WSCorreios.statusUsuario.Inativo">
+<remarks/>
+</member>
+<member name="T:Agenda.WSCorreios.contratoERPPK">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.contratoERPPK.diretoria">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.contratoERPPK.numero">
+<remarks/>
+</member>
+<member name="T:Agenda.WSCorreios.unidadePostagemERP">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.unidadePostagemERP.diretoriaRegional">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.unidadePostagemERP.endereco">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.unidadePostagemERP.id">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.unidadePostagemERP.nome">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.unidadePostagemERP.status">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.unidadePostagemERP.tipo">
+<remarks/>
+</member>
+<member name="T:Agenda.WSCorreios.enderecoERP">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.enderecoERP.bairro">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.enderecoERP.cep">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.enderecoERP.cidade">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.enderecoERP.complemento2">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.enderecoERP.end">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.enderecoERP.uf">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.enderecoERP.unidadesPostagem">
+<remarks/>
+</member>
+<member name="T:Agenda.WSCorreios.servicoERP">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.servicoERP.codigo">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.servicoERP.dataAtualizacao">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.servicoERP.dataAtualizacaoSpecified">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.servicoERP.datajAtualizacao">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.servicoERP.datajAtualizacaoSpecified">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.servicoERP.descricao">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.servicoERP.horajAtualizacao">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.servicoERP.horajAtualizacaoSpecified">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.servicoERP.id">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.servicoERP.servicoSigep">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.servicoERP.servicosAdicionais">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.servicoERP.tipo1Codigo">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.servicoERP.tipo1Descricao">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.servicoERP.tipo2Codigo">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.servicoERP.tipo2Descricao">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.servicoERP.vigencia">
+<remarks/>
+</member>
+<member name="T:Agenda.WSCorreios.servicoSigep">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.servicoSigep.categoriaServico">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.servicoSigep.categoriaServicoSpecified">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.servicoSigep.chancela">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.servicoSigep.descricao">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.servicoSigep.exigeDimensoes">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.servicoSigep.exigeDimensoesSpecified">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.servicoSigep.exigeValorCobrar">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.servicoSigep.exigeValorCobrarSpecified">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.servicoSigep.imitm">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.servicoSigep.pagamentoEntrega">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.servicoSigep.remessaAgrupada">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.servicoSigep.restricao">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.servicoSigep.restricaoSpecified">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.servicoSigep.servico">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.servicoSigep.servicoERP">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.servicoSigep.ssiCoCodigoPostal">
+<remarks/>
+</member>
+<member name="T:Agenda.WSCorreios.categoriaServico">
+<remarks/>
+</member>
+<member name="F:Agenda.WSCorreios.categoriaServico.SEM_CATEGORIA">
+<remarks/>
+</member>
+<member name="F:Agenda.WSCorreios.categoriaServico.PAC">
+<remarks/>
+</member>
+<member name="F:Agenda.WSCorreios.categoriaServico.SEDEX">
+<remarks/>
+</member>
+<member name="F:Agenda.WSCorreios.categoriaServico.CARTA">
+<remarks/>
+</member>
+<member name="F:Agenda.WSCorreios.categoriaServico.GRANDES_FORMATOS">
+<remarks/>
+</member>
+<member name="F:Agenda.WSCorreios.categoriaServico.REVERSO">
+<remarks/>
+</member>
+<member name="T:Agenda.WSCorreios.chancelaMaster">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.chancelaMaster.ativo">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.chancelaMaster.ativoSpecified">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.chancelaMaster.chancela">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.chancelaMaster.dataAtualizacao">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.chancelaMaster.dataAtualizacaoSpecified">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.chancelaMaster.descricao">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.chancelaMaster.id">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.chancelaMaster.idSpecified">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.chancelaMaster.servicosSigep">
+<remarks/>
+</member>
+<member name="T:Agenda.WSCorreios.simNao">
+<remarks/>
+</member>
+<member name="F:Agenda.WSCorreios.simNao.S">
+<remarks/>
+</member>
+<member name="F:Agenda.WSCorreios.simNao.N">
+<remarks/>
+</member>
+<member name="T:Agenda.WSCorreios.servicoAdicionalERP">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.servicoAdicionalERP.categoria">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.servicoAdicionalERP.codigo">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.servicoAdicionalERP.dataAtualizacao">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.servicoAdicionalERP.dataAtualizacaoSpecified">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.servicoAdicionalERP.datajAtualizacao">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.servicoAdicionalERP.datajAtualizacaoSpecified">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.servicoAdicionalERP.descricao">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.servicoAdicionalERP.horajAtualizacao">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.servicoAdicionalERP.horajAtualizacaoSpecified">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.servicoAdicionalERP.id">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.servicoAdicionalERP.idSpecified">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.servicoAdicionalERP.sigla">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.servicoAdicionalERP.valorDeclarado">
+<remarks/>
+</member>
+<member name="T:Agenda.WSCorreios.valorDeclarado">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.valorDeclarado.maximo">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.valorDeclarado.maximoSpecified">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.valorDeclarado.minimo">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.valorDeclarado.minimoSpecified">
+<remarks/>
+</member>
+<member name="T:Agenda.WSCorreios.vigenciaERP">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.vigenciaERP.dataFinal">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.vigenciaERP.dataFinalSpecified">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.vigenciaERP.dataInicial">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.vigenciaERP.dataInicialSpecified">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.vigenciaERP.datajFim">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.vigenciaERP.datajFimSpecified">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.vigenciaERP.datajIni">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.vigenciaERP.datajIniSpecified">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.vigenciaERP.id">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.vigenciaERP.idSpecified">
+<remarks/>
+</member>
+<member name="T:Agenda.WSCorreios.statusPlp">
+<remarks/>
+</member>
+<member name="F:Agenda.WSCorreios.statusPlp.Aberta">
+<remarks/>
+</member>
+<member name="F:Agenda.WSCorreios.statusPlp.Fechada">
+<remarks/>
+</member>
+<member name="F:Agenda.WSCorreios.statusPlp.Postada">
+<remarks/>
+</member>
+<member name="T:Agenda.WSCorreios.statusObjetoPostal">
+<remarks/>
+</member>
+<member name="F:Agenda.WSCorreios.statusObjetoPostal.EmBranco">
+<remarks/>
+</member>
+<member name="F:Agenda.WSCorreios.statusObjetoPostal.Postado">
+<remarks/>
+</member>
+<member name="F:Agenda.WSCorreios.statusObjetoPostal.Cancelado">
+<remarks/>
+</member>
+<member name="F:Agenda.WSCorreios.statusObjetoPostal.Estorno">
+<remarks/>
+</member>
+<member name="T:Agenda.WSCorreios.dimensaoTO">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.dimensaoTO.altura">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.dimensaoTO.comprimento">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.dimensaoTO.diametro">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.dimensaoTO.largura">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.dimensaoTO.peso">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.dimensaoTO.soma">
+<remarks/>
+</member>
+<member name="T:Agenda.WSCorreios.medidaTO">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.medidaTO.maximo">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.medidaTO.maximoSpecified">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.medidaTO.minimo">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.medidaTO.minimoSpecified">
+<remarks/>
+</member>
+<member name="T:Agenda.WSCorreios.embalagemLRSMaster">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.embalagemLRSMaster.codigo">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.embalagemLRSMaster.nome">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.embalagemLRSMaster.tipo">
+<remarks/>
+</member>
+<member name="T:Agenda.WSCorreios.tipoEmbalagem">
+<remarks/>
+</member>
+<member name="F:Agenda.WSCorreios.tipoEmbalagem.DE">
+<remarks/>
+</member>
+<member name="F:Agenda.WSCorreios.tipoEmbalagem.PD">
+<remarks/>
+</member>
+<member name="F:Agenda.WSCorreios.tipoEmbalagem.RL">
+<remarks/>
+</member>
+<member name="T:Agenda.WSCorreios.statusCartao">
+<remarks/>
+</member>
+<member name="F:Agenda.WSCorreios.statusCartao.Desconhecido">
+<remarks/>
+</member>
+<member name="F:Agenda.WSCorreios.statusCartao.Normal">
+<remarks/>
+</member>
+<member name="F:Agenda.WSCorreios.statusCartao.Suspenso">
+<remarks/>
+</member>
+<member name="F:Agenda.WSCorreios.statusCartao.Cancelado">
+<remarks/>
+</member>
+<member name="F:Agenda.WSCorreios.statusCartao.Irregular">
+<remarks/>
+</member>
+<member name="T:Agenda.WSCorreios.valePostal">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.valePostal.cidNoCidade">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.valePostal.ctcCoAadministrativo">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.valePostal.ctcNuContrato">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.valePostal.ctcNuContratoSpecified">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.valePostal.ctcNuContratoEct">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.valePostal.ctcNuContratoEctSpecified">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.valePostal.cvpEdBairro">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.valePostal.cvpEdCliente">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.valePostal.cvpEdComplemento">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.valePostal.cvpEdNumero">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.valePostal.cvpNoCliente">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.valePostal.cvpNuCep">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.valePostal.cvpNuCepSpecified">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.valePostal.descricaoErro">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.valePostal.estSgEstado">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.valePostal.monVarTarifaAdicional">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.valePostal.monVarTarifaServico">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.valePostal.monVarValorDescontos">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.valePostal.monVarValorImposto">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.valePostal.prsCoProdutoServico">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.valePostal.prsCoProdutoServicoSpecified">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.valePostal.pveNu">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.valePostal.pveNuSpecified">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.valePostal.pveOrgNuAgencia">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.valePostal.pveOrgNuAgenciaSpecified">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.valePostal.pveOrgNuAgenciaDes">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.valePostal.pveOrgNuAgenciaDesSpecified">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.valePostal.pveOrgNuAgenciaOri">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.valePostal.pveOrgNuAgenciaOriSpecified">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.valePostal.retornaCodErro">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.valePostal.sitNoSituacao">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.valePostal.tlgTxDescricao">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.valePostal.vapDhTransacao">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.valePostal.vapDhTransacaoSpecified">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.valePostal.vapNuEtiquetaEncomenda">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.valePostal.vapVrCobradoEct">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.valePostal.vapVrCobradoEctSpecified">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.valePostal.vapVrNominal">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.valePostal.vapVrNominalSpecified">
+<remarks/>
+</member>
+<member name="T:Agenda.WSCorreios.coletaSimultanea">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.coletaSimultanea.obj">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.coletaSimultanea.obs">
+<remarks/>
+</member>
+<member name="T:Agenda.WSCorreios.coleta">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.coleta.cklist">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.coleta.descricao">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.coleta.documento">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.coleta.id_cliente">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.coleta.produto">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.coleta.remetente">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.coleta.tipo">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.coleta.valor_declarado">
+<remarks/>
+</member>
+<member name="T:Agenda.WSCorreios.produto">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.produto.codigo">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.produto.qtd">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.produto.tipo">
+<remarks/>
+</member>
+<member name="T:Agenda.WSCorreios.remetente">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.remetente.celular">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.remetente.ddd_celular">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.remetente.identificacao">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.remetente.sms">
+<remarks/>
+</member>
+<member name="T:Agenda.WSCorreios.pessoa">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.pessoa.bairro">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.pessoa.cep">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.pessoa.cidade">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.pessoa.complemento">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.pessoa.ddd">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.pessoa.email">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.pessoa.logradouro">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.pessoa.nome">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.pessoa.numero">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.pessoa.referencia">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.pessoa.telefone">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.pessoa.uf">
+<remarks/>
+</member>
+<member name="T:Agenda.WSCorreios.coletaReversa">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.coletaReversa.ag">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.coletaReversa.ar">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.coletaReversa.arSpecified">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.coletaReversa.cartao">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.coletaReversa.numero">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.coletaReversa.numeroSpecified">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.coletaReversa.obj_col">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.coletaReversa.servico_adicional">
+<remarks/>
+</member>
+<member name="T:Agenda.WSCorreios.objeto">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.objeto.desc">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.objeto.entrega">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.objeto.id">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.objeto.item">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.objeto.num">
+<remarks/>
+</member>
+<member name="T:Agenda.WSCorreios.servicoAdicionalTO">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.servicoAdicionalTO.categoria">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.servicoAdicionalTO.codigo">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.servicoAdicionalTO.sigla">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.servicoAdicionalTO.tipo">
+<remarks/>
+</member>
+<member name="T:Agenda.WSCorreios.retornoCancelamento">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.retornoCancelamento.cod_erro">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.retornoCancelamento.codigo_administrativo">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.retornoCancelamento.data">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.retornoCancelamento.hora">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.retornoCancelamento.msg_erro">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.retornoCancelamento.objeto_postal">
+<remarks/>
+</member>
+<member name="T:Agenda.WSCorreios.objetoSimplificado">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.objetoSimplificado.datahora_cancelamento">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.objetoSimplificado.numero_pedido">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.objetoSimplificado.numero_pedidoSpecified">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.objetoSimplificado.status_pedido">
+<remarks/>
+</member>
+<member name="T:Agenda.WSCorreios.tipoBloqueio">
+<remarks/>
+</member>
+<member name="F:Agenda.WSCorreios.tipoBloqueio.FRAUDE_BLOQUEIO">
+<remarks/>
+</member>
+<member name="F:Agenda.WSCorreios.tipoBloqueio.EXTRAVIO_VAREJO_PRE_INDENIZADO">
+<remarks/>
+</member>
+<member name="F:Agenda.WSCorreios.tipoBloqueio.EXTRAVIO_VAREJO_POS_INDENIZADO">
+<remarks/>
+</member>
+<member name="F:Agenda.WSCorreios.tipoBloqueio.EXTRAVIO_CORPORATIVO">
+<remarks/>
+</member>
+<member name="F:Agenda.WSCorreios.tipoBloqueio.INTERNACIONAL_LDI">
+<remarks/>
+</member>
+<member name="T:Agenda.WSCorreios.acao">
+<remarks/>
+</member>
+<member name="F:Agenda.WSCorreios.acao.DEVOLVIDO_AO_REMETENTE">
+<remarks/>
+</member>
+<member name="F:Agenda.WSCorreios.acao.ENCAMINHADO_PARA_REFUGO">
+<remarks/>
+</member>
+<member name="F:Agenda.WSCorreios.acao.REINTEGRADO_E_DEVOLVIDO_AO_REMETENTE">
+<remarks/>
+</member>
+<member name="F:Agenda.WSCorreios.acao.DESBLOQUEADO">
+<remarks/>
+</member>
+<member name="T:Agenda.WSCorreios.mensagemParametrizadaTO">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.mensagemParametrizadaTO.mensagem">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.mensagemParametrizadaTO.tipo">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.mensagemParametrizadaTO.tipoSpecified">
+<remarks/>
+</member>
+<member name="P:Agenda.WSCorreios.mensagemParametrizadaTO.titulo">
+<remarks/>
+</member>
+<member name="T:Agenda.WSCorreios.tipoMensagem">
+<remarks/>
+</member>
+<member name="F:Agenda.WSCorreios.tipoMensagem.A">
+<remarks/>
+</member>
+<member name="F:Agenda.WSCorreios.tipoMensagem.E">
+<remarks/>
+</member>
+<member name="F:Agenda.WSCorreios.tipoMensagem.S">
+<remarks/>
+</member>
+<member name="M:Agenda.frmCadCliente.AtivaDesativa(System.Boolean)">
+ <summary>
+ Subtina para ativar e desativar os componentes do formulário
+ </summary>
+ <param name="Status">True: Ativa componentes. False: Desativa componentes</param>
+</member>
+<member name="M:Agenda.frmCadCliente.CancelaOperacao">
+ <summary>
+ Subrotina para cancelar qualquer tipo de operação em execução
+ </summary>
+</member>
+</members>
+</doc>
