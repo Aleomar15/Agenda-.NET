@@ -10,7 +10,7 @@ Primeiramente deve estar instalado:
   
 Como faz para executa-lo?
 - Usar o Visual Basic seguindo as orientações mostradas.
-- Ou usar o executavel.  
+- Ou usar o executavel localizado em: /bin/Release/Agenda.exe.  
     
 
 # Tecnologias Utilizadas
